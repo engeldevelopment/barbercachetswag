@@ -1,0 +1,14 @@
+*.log
+*.pot
+*.pyc
+.vscode/
+.idea/
+__pycache__/
+*.sqlite3
+*.py[co]
+staticfiles/
+htmlcov/
+media/
+.idea/
+.env
+.coverage
