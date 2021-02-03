@@ -3,7 +3,7 @@ name: Deploy app
 on:
   push:
     branches:
-      - master 
+      - main 
   release:
     types:
       - created
