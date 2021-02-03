@@ -3,9 +3,11 @@ from decouple import config
 
 from .base import *
 
-DEBUG = False
 
-SECRET_KEY = config('SECRET_KEY')
+ALLOWED_HOSTS = [
+	'127.0.0.1',
+	'barbercachets.herokuapp.com'
+]
 
 MIDDLEWARE += ['whitenoise.middleware.WhiteNoiseMiddleware',]
 

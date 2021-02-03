@@ -14,6 +14,13 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from os.path import abspath, dirname, join
 
+from decouple import config
+
+
+DEBUG = config('DEBUG', cast=bool, default=True)
+
+SECRET_KEY = config('SECRET_KEY', cast=str)
+
 
 def root(*dirs):
     BASE_DIR = join(dirname(__file__), '..', '..')
