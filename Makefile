@@ -13,5 +13,12 @@ check:
 test:
 	@$(TOOL) test
 
+coverage:
+	@coverage run manage.py test
+	@coverage report
+
 collect:
 	@$(TOOL) collectstatic --no-input
+
+linter:
+	@flake8 barber
