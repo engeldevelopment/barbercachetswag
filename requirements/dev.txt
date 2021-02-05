@@ -1,4 +1,5 @@
 -r base.txt
 
-factory_boy==3.2
+wagtail_factories==2.0.1
 coverage==5.4
+flake8==3.8.4

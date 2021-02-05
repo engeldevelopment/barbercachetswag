@@ -19,3 +19,6 @@ coverage:
 
 collect:
 	@$(TOOL) collectstatic --no-input
+
+linter:
+	@flake8 barber
